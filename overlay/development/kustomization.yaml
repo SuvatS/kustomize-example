@@ -1,0 +1,7 @@
+# kustomization.yaml
+resources:
+  - deployment.yaml
+
+images:
+  - name: asia-southeast1-docker.pkg.dev/poc-other-432010/cicd-repo/test-ci-cd
+    newTag: latest
