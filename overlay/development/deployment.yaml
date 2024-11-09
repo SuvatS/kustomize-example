@@ -1,4 +1,3 @@
-# deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -13,6 +12,7 @@ spec:
       labels:
         app: my-app
     spec:
+      serviceAccountName: my-service-account
       containers:
         - name: my-app-container
           image: asia-southeast1-docker.pkg.dev/poc-other-432010/cicd-repo/test-ci-cd:latest
