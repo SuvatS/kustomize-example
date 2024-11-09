@@ -6,4 +6,4 @@ resources:
 
 images:
   - name: asia-southeast1-docker.pkg.dev/poc-other-432010/cicd-repo/test-ci-cd
-    newTag: latest
+    newTag: a541daf26bfd
