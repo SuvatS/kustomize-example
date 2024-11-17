@@ -8,10 +8,5 @@ images:
   - name: asia-southeast1-docker.pkg.dev/poc-other-432010/cicd-repo/test-ci-cd
     newTag: v.1.0.1
 
-secretGenerator:
-  - name: gcr-json-key
-    literals:
-      - .dockerconfigjson=$(cat artifact_registry_sa_key.json | base64 | tr -d '\n')
-
 patchesStrategicMerge:
   - imagePullSecrets-patch.yaml
