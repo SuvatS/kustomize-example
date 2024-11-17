@@ -1,9 +1,0 @@
-# kustomization.yaml
-resources:
-  - deployment.yaml
-  - service-account.yaml
-  - secret.yaml
-
-images:
-  - name: asia-southeast1-docker.pkg.dev/poc-other-432010/cicd-repo/test-ci-cd
-    newTag: v.1.0.1

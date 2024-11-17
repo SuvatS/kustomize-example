@@ -1,20 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app
+  name: test-ci-cd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: my-app
+      app: test-ci-cd
   template:
     metadata:
       labels:
-        app: my-app
+        app: test-ci-cd
     spec:
-      serviceAccountName: my-service-account
       containers:
-        - name: my-app-container
+        - name: test-ci-cd
           image: asia-southeast1-docker.pkg.dev/poc-other-432010/cicd-repo/test-ci-cd:v.1.0.1
           ports:
             - containerPort: 80
