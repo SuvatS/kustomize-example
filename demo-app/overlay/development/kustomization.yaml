@@ -5,8 +5,8 @@ resources:
   - deployment.yaml
 
 images:
-  - name: asia-southeast1-docker.pkg.dev/poc-other-432010/cicd-repo/test-ci-cd
-    newTag: v.1.0.1
+  - name: chinwan1/cicd-test-api
+    newTag: latest-dev
 
 patchesStrategicMerge:
   - imagePullSecrets-patch.yaml

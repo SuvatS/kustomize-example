@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: test-ci-cd
-          image: asia-southeast1-docker.pkg.dev/poc-other-432010/cicd-repo/test-ci-cd:v.1.0.1
+          image: chinwan1/cicd-test-api:latest-dev
           ports:
             - containerPort: 80
