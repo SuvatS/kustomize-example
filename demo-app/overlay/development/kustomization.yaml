@@ -7,6 +7,3 @@ resources:
 images:
   - name: chinwan1/cicd-test-api
     newTag: latest-dev
-
-patchesStrategicMerge:
-  - imagePullSecrets-patch.yaml
