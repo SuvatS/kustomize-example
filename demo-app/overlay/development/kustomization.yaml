@@ -6,4 +6,4 @@ resources:
 
 images:
   - name: chinwan1/cicd-test-api
-    newTag: 1.16.0
+    newTag: 1.16.2
